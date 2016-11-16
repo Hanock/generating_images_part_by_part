@@ -21,7 +21,7 @@ def main(_):
     if not os.path.exists(FLAGS.sample_dir):
         os.makedirs(FLAGS.sample_dir)
 
-    gpu_options = tf.GPUOptions(per_process_gpu_memory_fraction=0.28)
+    gpu_options = tf.GPUOptions(per_process_gpu_memory_fraction=0.8)
 
     with tf.Session(config=tf.ConfigProto(gpu_options=gpu_options)) as sess:
         gan = GAN(sess, FLAGS)
