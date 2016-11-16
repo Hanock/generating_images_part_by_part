@@ -14,31 +14,31 @@ waa
 
 
 #### Dependencies
-* tensorflow 0.10.0rc0
-* h5py 2.3.1
-* scipy 0.18.0
-* Pillow 3.1.0
+* tensorflow 0.10.0rc0+
+* h5py 2.3.1+
+* scipy 0.18.0+
+* Pillow 3.1.0+
 
 #### How to use
-1. First, go into the 'data' directory and download celebA dataset.
+First, go into the 'data' directory and download celebA dataset.
 
 ```
 cd data
 python download.py celebA
 ```
 
-2. Preprocess the celebA dataset to create a hdf5 file. It resizes images to 64*64.
+Preprocess the celebA dataset to create a hdf5 file. It resizes images to 64*64.
 
 ```
 python preprocess.py
 ```
 
-3. Finally, go into the 'code' directory and run 'main_cgan_triple_alpha_celeba.py'.
+Finally, go into the 'code' directory and run 'main_cgan_triple_alpha_celeba.py'.
 
 ```
 cd ../code
 python main_cgan_triple_alpha_celeba.py
 ```
 
-You can see samples in 'samples' directory.
+You can see the samples in 'samples' directory.
 
